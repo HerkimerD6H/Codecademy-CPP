@@ -3,7 +3,7 @@
 // User Name:         @HerkimerD6H 
 // Profile Link:      https://www.codecademy.com/profiles/HerkimerD6H
 // Class:             Learn C++ (https://www.codecademy.com/enrolled/courses/learn-c-plus-plus)
-// Lesson:            04 - Conditionals and Logic
+// Lesson:            03 - Conditionals and Logic
 // Project Name:      01 - Space
 // Project File:      space.cpp
 // Instructions:      Write a C++ program called space.cpp that calculates the fighting weight of an interplanetary fighter on other planets:
