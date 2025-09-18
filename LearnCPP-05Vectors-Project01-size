@@ -1,0 +1,47 @@
+// Date File Added:   2025-09-17
+// Platform:          Codecademy
+// User Name:         @HerkimerD6H 
+// Profile Link:      https://www.codecademy.com/profiles/HerkimerD6H
+// Class:             Learn C++ (https://www.codecademy.com/enrolled/courses/learn-c-plus-plus)
+// Lesson:            05 - Vectors
+// Project Name:      01 - Vector Size
+// Project File:      size.cpp
+
+    // .size()
+    // <std::vector> not only stores the elements; it also stores the size of the vector:
+    // .size() function returns the number of elements in the vector.
+    // For example, suppose we have a std::string vector with Sonny’s grocery list:
+    // std::vector<std::string> grocery = {"Hot Pepper Jam", "Dragon Fruit", "Brussel Sprouts"};
+    // Instructions
+    // Checkpoint 1 Passed
+    // 1. Add a few more items to the grocery list using .push_back(). Print the size of grocery using .size(). Is it the same as you expected?
+
+
+//******** My Project Begins Here:************//
+//the libraries and initial vector were declared for me in the exercise
+#include <iostream>
+#include <vector>
+int main() {
+  
+  std::vector<std::string> grocery = {"Hot Pepper Jam", "Dragon Fruit", "Brussel Sprouts"};
+
+  // I added this int to use as a counter - declare and initalize
+  int i = 0; // added by me
+
+  // Add more << this instruction comment was given by the project, and I added these three elements below 
+  grocery.push_back("Blue Cheese"); // Delicious! Plus carrots and celery if we are feeling fancy :) 
+  grocery.push_back("Chicken Wings"); // Go Bills! Extra crispy please! Drums and flats are both good!
+  grocery.push_back("AW Root Beer"); // Ice cold and amazing!
+
+// I wrote this line to output the number of elements in the vector using .size()
+  std::cout << "Number of Elements: " << grocery.size() <<"\n";
+
+// I added this while loop to output each of the elements collected in the vector
+// Since the first element is Element 0, but the Count (number) of elements begins with 1:
+// I can use one int (here - i) to both keep track of the element number and be the stopping condition comparator with grocery size
+// there are 6 elements here and the element numbers go from 0-5
+  while (i < grocery.size()) {
+    std::cout << "Element Number: " << i << " | Element Name: "<< grocery[i] << "\n";
+    i++;
+  }
+  
